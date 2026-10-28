@@ -40,9 +40,11 @@ Una estética editorial y minimalista, con una paleta de **marfil, verde bosque 
 
 La experiencia incorpora:
 
-- **Portada interactiva:** una composición de curvas con profundidad, animada en Canvas y sensible al movimiento del puntero.
-- **Animaciones de recorrido:** apariciones suaves de contenido, ilustraciones en movimiento y transiciones entre estados.
-- **Diseño responsive:** distribución adaptada a computadoras, tablets y celulares.
+- **Portada interactiva:** presentación y fotografía integradas, con una composición animada en Canvas en pantallas amplias.
+- **Lectura progresiva:** información esencial a primera vista y responsabilidades profesionales desplegables.
+- **Cards e ilustraciones:** composición de competencias y herramientas en tarjetas, con gráficos abstractos animados para organización, análisis y tecnología.
+- **Movimiento sutil:** franja tipográfica continua, profundidad al mover el cursor sobre las cards y transiciones suaves al recorrer el sitio.
+- **Diseño responsive:** portada ajustada a la altura de pantalla y distribución adaptada a computadoras, tablets y celulares.
 - **Navegación por secciones:** menú móvil, indicador de sección activa y barra de progreso de lectura.
 - **Control del movimiento:** opción para pausar las animaciones y respeto por la preferencia de movimiento reducido del dispositivo.
 - **Acceso directo al CV:** descarga del currículum en PDF.

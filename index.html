@@ -22,98 +22,210 @@
   <a href="#contenido" class="skip-link">Saltar al contenido</a>
   <div class="reading-progress" aria-hidden="true"></div>
   <header class="header">
-    <a class="brand" href="#inicio" aria-label="Santiago Abella, inicio">sa<span class="brand-dot">.</span></a>
+    <a class="brand" href="#inicio" aria-label="Santiago Abella, inicio">sa<span>.</span></a>
     <nav id="navigation" aria-label="Navegación principal">
-      <a href="#sobre-mi">Sobre mí</a><a href="#experiencia">Experiencia</a><a href="#educacion">Formación</a><a href="#proyectos">Mi enfoque</a><a href="#habilidades">Competencias</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Formación</a>
+      <a href="#proyectos">Mi enfoque</a>
+      <a href="#habilidades">Competencias</a>
     </nav>
     <div class="header-actions">
-      <a class="header-contact" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a>
+      <a class="header-contact" href="#contacto">Conversemos</a>
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
     </div>
   </header>
+
   <main id="contenido">
     <section class="hero container" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> ADMINISTRACIÓN & NEGOCIOS</p>
-        <h1 id="hero-title">Santiago<br> <span>Abella<span class="name-dot">.</span></span></h1>
-        <p class="hero-statement">Visión empresarial.<br> <span>Mentalidad tecnológica.</span></p>
-        <p class="hero-description">Licenciado en Dirección de Empresas. Conecto la gestión, el análisis y la tecnología para hacer que las cosas funcionen mejor.</p>
+        <div class="hero-identity">
+          <img class="hero-portrait" src="assets/img/santiago-abella.jpg" width="460" height="460" alt="Santiago Abella" fetchpriority="high">
+          <div>
+            <p class="eyebrow">ADMINISTRACIÓN & NEGOCIOS</p>
+            <p class="hero-role">Lic. en Dirección de Empresas</p>
+          </div>
+        </div>
+        <h1 id="hero-title">Santiago<br><span>Abella<span class="name-dot">.</span></span></h1>
+        <p class="hero-statement">Visión empresarial.<br><span>Mentalidad tecnológica.</span></p>
         <div class="hero-actions">
-          <a class="button button-dark magnetic" href="#experiencia">Explorar mi trayectoria <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark magnetic" href="#experiencia">Ver mi trayectoria</a>
           <a class="text-link" href="assets/CV_Santiago_Abella.pdf" download>Descargar CV <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg></a>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Composición abstracta animada de líneas conectadas">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <span class="visual-coordinate top-coordinate" aria-hidden="true">FIG. 01 — CONECTAR PARA CRECER</span>
-        <canvas id="flow-canvas" aria-hidden="true"></canvas>
-        <div class="orbital-label label-management" aria-hidden="true"><span></span> Gestión</div>
-        <div class="orbital-label label-analysis" aria-hidden="true"><span></span> Análisis</div>
-        <div class="orbital-label label-tech" aria-hidden="true"><span></span> Tecnología</div>
-        <div class="profile-stamp"><img src="assets/img/santiago-abella.jpg" width="460" height="460" alt="Retrato de Santiago Abella" fetchpriority="high"><div><strong>Una mirada integral.</strong><span>Foco en cada detalle.</span></div><span class="stamp-arrow" aria-hidden="true">↗</span></div>
-        <span class="visual-coordinate bottom-coordinate" aria-hidden="true">34°54′ S &nbsp; 56°10′ O</span>
-      </div>
-      <div class="hero-footer"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Montevideo, Uruguay</span><a href="#sobre-mi">Un poco más sobre mí <span class="scroll-arrow" aria-hidden="true">↓</span></a><span class="hero-index">PERFIL PROFESIONAL / 2026</span></div>
+      <div class="hero-visual" aria-hidden="true"><div class="hero-orbit"></div><canvas id="flow-canvas"></canvas></div>
+      <div class="hero-footer"><span>Montevideo, Uruguay</span></div>
     </section>
-    <div class="ticker" aria-label="Administración, control financiero, gestión de proyectos y tecnología aplicada"><div class="ticker-track" aria-hidden="true"><span>Administración <i>✳</i> Control financiero <i>✳</i> Gestión de proyectos <i>✳</i> Tecnología aplicada <i>✳</i></span><span>Administración <i>✳</i> Control financiero <i>✳</i> Gestión de proyectos <i>✳</i> Tecnología aplicada <i>✳</i></span></div></div>
 
-    <section class="about section container" id="sobre-mi" aria-labelledby="about-title">
-      <div class="section-kicker reveal"><span>01 / SOBRE MÍ</span><span>EL PERFIL DETRÁS DEL TRABAJO</span></div>
-      <div class="about-grid">
-        <div class="about-heading reveal"><h2 id="about-title">El orden hace<br> espacio a las<br> <em>buenas ideas.</em></h2><div class="about-signature">Santiago Abella <span>↗</span></div></div>
-        <div class="about-body reveal"><p class="lead">Soy licenciado en Dirección de Empresas, con experiencia en administración, control financiero y gestión de proyectos.</p><p>Me gusta entender cómo funciona cada parte de un negocio y conectar las piezas. Trabajo con una mirada analítica y organizada, coordinando facturación, proveedores, documentación y presupuestos con autonomía y atención al detalle.</p><p>Mi formación complementaria en programación me permite sumar otra perspectiva: identificar oportunidades para automatizar tareas, analizar información y mejorar los procesos administrativos.</p><div class="personal-details"><div><span>BASE</span><strong>Montevideo, Uruguay</strong></div><div><span>IDIOMAS</span><strong>Español nativo · Inglés avanzado</strong></div><div><span>FORMACIÓN</span><strong>Lic. en Dirección de Empresas</strong></div><div><span>NACIMIENTO</span><strong>26 de enero de 1996</strong></div></div></div>
+    <div class="ticker" data-animate>
+      <p class="sr-only">Administración · Control financiero · Gestión de proyectos · Tecnología aplicada</p>
+      <div class="ticker-track" aria-hidden="true">
+        <div class="ticker-group"><span>Administración</span><i>✳</i><span>Control financiero</span><i>✳</i><span>Gestión de proyectos</span><i>✳</i><span>Tecnología aplicada</span><i>✳</i></div>
+        <div class="ticker-group"><span>Administración</span><i>✳</i><span>Control financiero</span><i>✳</i><span>Gestión de proyectos</span><i>✳</i><span>Tecnología aplicada</span><i>✳</i></div>
+      </div>
+    </div>
+
+    <section class="about section container section-layout" id="sobre-mi" aria-labelledby="about-title">
+      <div class="section-header reveal"><span class="section-number">01</span><h2 id="about-title">Sobre mí</h2></div>
+      <div class="about-body reveal">
+        <p class="lead">Soy licenciado en Dirección de Empresas, con experiencia en administración, control financiero y gestión de proyectos.</p>
+        <p>Trabajo con organización, autonomía y atención al detalle. Mi formación en programación complementa esa mirada: entender los procesos y encontrar formas de mejorarlos con tecnología.</p>
       </div>
     </section>
 
-    <section class="experience section" id="experiencia" aria-labelledby="experience-title"><div class="container">
-      <div class="section-kicker reveal"><span>02 / EXPERIENCIA</span><span>GESTIÓN EN LA PRÁCTICA</span></div>
-      <div class="section-heading reveal"><h2 id="experience-title">Experiencia real.<br> <em>Visión integral.</em></h2><p>Distintos sectores. Un mismo hilo conductor:<br> organizar, analizar y hacer que suceda.</p></div>
-      <div class="career-list">
-        <article class="career-item reveal"><div class="career-meta"><span class="career-period">2023 — ACTUALIDAD</span><span class="current-badge"><span></span> En la actualidad</span><span class="sector">ARQUITECTURA & CONSTRUCCIÓN</span></div><div class="career-main"><p class="company">Estudio 21 <span>↗</span></p><h3>Responsable de Administración<br> y Gestión de Obras</h3><p class="career-summary">Una visión completa de cada obra, desde los números hasta la coordinación diaria.</p><ul><li>Gestión administrativa de múltiples proyectos en simultáneo, coordinando plazos, documentación y prioridades.</li><li>Diseño e implementación de sistemas de seguimiento en Excel para el control presupuestario y la trazabilidad de gastos.</li><li>Gestión de compras y materiales: cotizaciones, selección de proveedores y seguimiento de pedidos.</li><li>Nexo entre dirección, obra y proveedores para asegurar el flujo de información y el cumplimiento de plazos.</li></ul><div class="tags"><span>Administración</span><span>Presupuestos</span><span>Proveedores</span><span>Excel</span></div></div><span class="career-number" aria-hidden="true">01</span></article>
-        <article class="career-item reveal"><div class="career-meta"><span class="career-period">2022 — ACTUALIDAD</span><span class="current-badge"><span></span> En la actualidad</span><span class="sector">SALUD & SERVICIOS</span></div><div class="career-main"><p class="company">Laboratorio Carmen Álvarez <span>↗</span></p><h3>Administración y Facturación</h3><p class="career-summary">Precisión administrativa al servicio de un laboratorio de anatomía patológica y ginecológica.</p><ul><li>Carga y control de órdenes de estudio en el sistema del laboratorio.</li><li>Facturación y gestión de cobranza a mutualistas de todo el país.</li></ul><div class="tags"><span>Facturación</span><span>Cobranzas</span><span>Control documental</span></div></div><span class="career-number" aria-hidden="true">02</span></article>
-        <article class="career-item reveal"><div class="career-meta"><span class="career-period">2018 — 2022</span><span class="sector">ACTIVIDAD INDEPENDIENTE</span></div><div class="career-main"><p class="company">Mercados de activos digitales <span>↗</span></p><h3>Gestión de Portafolio de Inversiones</h3><p class="career-summary">Análisis y toma de decisiones en un entorno dinámico.</p><ul><li>Administración de portafolio propio con criterios de diversificación.</li><li>Análisis de mercado y valuación de activos como base para decisiones de compra y venta.</li><li>Gestión del riesgo: límites de exposición y seguimiento continuo de resultados en contextos de alta volatilidad.</li></ul><div class="tags"><span>Análisis</span><span>Gestión del riesgo</span><span>Toma de decisiones</span></div></div><span class="career-number" aria-hidden="true">03</span></article>
+    <section class="experience section" id="experiencia" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header reveal"><span class="section-number">02</span><h2 id="experience-title">Experiencia</h2></div>
+        <div class="career-list">
+          <article class="career-item reveal">
+            <div class="career-meta"><span>2023 — Actualidad</span></div>
+            <div class="career-main">
+              <p class="company"><span class="company-mark" aria-hidden="true">21</span>Estudio 21</p>
+              <h3>Responsable de Administración y Gestión de Obras</h3>
+              <details class="career-details">
+                <summary>Ver responsabilidades<span class="details-icon" aria-hidden="true"></span></summary>
+                <ul>
+                  <li>Gestión administrativa de múltiples obras: plazos, documentación y prioridades.</li>
+                  <li>Sistemas de seguimiento en Excel para el control presupuestario y la trazabilidad de gastos.</li>
+                  <li>Compras, cotizaciones y seguimiento de materiales. Coordinación entre dirección, obra y proveedores.</li>
+                </ul>
+              </details>
+            </div>
+          </article>
+          <article class="career-item reveal">
+            <div class="career-meta"><span>2022 — Actualidad</span></div>
+            <div class="career-main">
+              <p class="company"><span class="company-mark" aria-hidden="true">CA</span>Laboratorio Carmen Álvarez</p>
+              <h3>Administración y Facturación</h3>
+              <details class="career-details">
+                <summary>Ver responsabilidades<span class="details-icon" aria-hidden="true"></span></summary>
+                <ul>
+                  <li>Carga y control de órdenes de estudio en el sistema del laboratorio.</li>
+                  <li>Facturación y gestión de cobranza a mutualistas de todo el país.</li>
+                </ul>
+              </details>
+            </div>
+          </article>
+          <article class="career-item reveal">
+            <div class="career-meta"><span>2018 — 2022</span></div>
+            <div class="career-main">
+              <p class="company"><span class="company-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17 9 12l4 3 7-10M4 21h16"/></svg></span>Actividad independiente · Activos digitales</p>
+              <h3>Gestión de Portafolio de Inversiones</h3>
+              <details class="career-details">
+                <summary>Ver responsabilidades<span class="details-icon" aria-hidden="true"></span></summary>
+                <ul>
+                  <li>Administración de portafolio propio con criterios de diversificación y análisis de mercado.</li>
+                  <li>Valuación de activos, límites de exposición y seguimiento de resultados en contextos de alta volatilidad.</li>
+                </ul>
+              </details>
+            </div>
+          </article>
+        </div>
       </div>
-    </div></section>
-
-    <section class="education section container" id="educacion" aria-labelledby="education-title">
-      <div class="section-kicker reveal"><span>03 / FORMACIÓN</span><span>UNA BASE SÓLIDA. UNA MIRADA ABIERTA.</span></div>
-      <div class="education-grid"><div class="reveal"><h2 id="education-title">Aprender.<br> Conectar.<br> <em>Evolucionar.</em></h2><p class="education-intro">Una formación empresarial que se complementa con herramientas del mundo tecnológico.</p><div class="degree-mark" aria-hidden="true">sa<span>↗</span></div></div><div class="education-list">
-        <article class="education-item reveal"><div class="education-top"><span>2016 — 2020</span><span class="degree-status">Título obtenido</span></div><h3>Licenciatura en<br> Dirección de Empresas</h3><p>Universidad Católica del Uruguay</p><span class="education-abbr" aria-hidden="true">UCU ↗</span></article>
-        <article class="education-item reveal"><div class="education-top"><span>2025 — 2026</span><span class="degree-status partial">Cursado parcial</span></div><h3>Tecnicatura en<br> Desarrollo de Software</h3><p>Universidad Católica del Uruguay</p><p class="education-note">Formación técnica complementaria en programación, con aplicación en automatización y análisis de procesos.</p></article>
-        <article class="education-item reveal"><div class="education-top"><span>GRADUADO EN 2014</span></div><h3>Bachillerato</h3><p>Colegio y Liceo Pedro Poveda</p></article>
-      </div></div>
     </section>
 
-    <section class="focus section" id="proyectos" aria-labelledby="focus-title"><div class="container">
-      <div class="section-kicker reveal"><span>04 / MI ENFOQUE</span><span>DONDE PUEDO APORTAR</span></div>
-      <div class="section-heading reveal"><h2 id="focus-title">Conectar las piezas.<br> <em>Mejorar el conjunto.</em></h2><p>Mi experiencia se encuentra en la intersección<br> entre la gestión, las personas y la información.</p></div>
-      <div class="focus-grid">
-        <article class="focus-card reveal"><div class="focus-art art-organization" aria-hidden="true"><div class="organization-line"></div><span class="org-node n1"></span><span class="org-node n2"></span><span class="org-node n3"></span><span class="org-node n4"></span><span class="org-node n5"></span></div><div class="focus-card-top"><span>01 / ORGANIZACIÓN</span><span>↗</span></div><h3>Gestión que<br> da claridad.</h3><p>Ordenar prioridades, coordinar múltiples frentes y mantener la información disponible para que cada proyecto avance.</p><span class="focus-footnote">ADMINISTRACIÓN · DOCUMENTACIÓN · COORDINACIÓN</span></article>
-        <article class="focus-card reveal"><div class="focus-art art-finance" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="focus-card-top"><span>02 / ANÁLISIS</span><span>↗</span></div><h3>Números con<br> contexto.</h3><p>Dar seguimiento a presupuestos, gastos y cobranzas. Convertir datos dispersos en información útil para decidir.</p><span class="focus-footnote">CONTROL FINANCIERO · EXCEL · TRAZABILIDAD</span></article>
-        <article class="focus-card reveal"><div class="focus-art art-tech" aria-hidden="true"><span class="tech-ring r1"></span><span class="tech-ring r2"></span><span class="tech-ring r3"></span><span class="tech-core">✳</span></div><div class="focus-card-top"><span>03 / EVOLUCIÓN</span><span>↗</span></div><h3>Tecnología con<br> propósito.</h3><p>Sumar herramientas digitales, IA y conocimientos de programación para repensar tareas y detectar oportunidades de mejora.</p><span class="focus-footnote">AUTOMATIZACIÓN · IA APLICADA · PROCESOS</span></article>
+    <section class="education section container section-layout" id="educacion" aria-labelledby="education-title">
+      <div class="section-header reveal"><span class="section-number">03</span><h2 id="education-title">Formación</h2></div>
+      <div class="education-list">
+        <article class="education-item reveal">
+          <div class="education-top"><span>2016 — 2020</span><span class="degree-status">Título obtenido</span></div>
+          <h3>Licenciatura en Dirección de Empresas</h3><p>Universidad Católica del Uruguay</p>
+        </article>
+        <article class="education-item reveal">
+          <div class="education-top"><span>2025 — 2026</span><span class="degree-status partial">Cursado parcial</span></div>
+          <h3>Tecnicatura en Desarrollo de Software</h3><p>Universidad Católica del Uruguay</p>
+        </article>
+        <article class="education-item reveal">
+          <div class="education-top"><span>2014</span></div>
+          <h3>Bachillerato</h3><p>Colegio y Liceo Pedro Poveda</p>
+        </article>
       </div>
-    </div></section>
+    </section>
+
+    <section class="focus section" id="proyectos" aria-labelledby="focus-title" data-animate>
+      <div class="container">
+        <div class="section-header reveal"><span class="section-number">04</span><h2 id="focus-title">Mi enfoque</h2></div>
+        <div class="focus-grid">
+          <div class="focus-cell reveal">
+            <article class="focus-card" data-depth>
+              <span class="card-index" aria-hidden="true">01 /</span>
+              <div class="focus-art organization-art" aria-hidden="true">
+                <div class="layer-stack"><span></span><span></span><span></span><span></span></div>
+                <svg class="organization-path" viewBox="0 0 320 200"><path d="M36 142h58l66-89 66 89h58"/><circle cx="36" cy="142" r="4"/><circle cx="160" cy="53" r="4"/><circle cx="284" cy="142" r="4"/></svg>
+              </div>
+              <div class="focus-copy"><h3>Organización</h3><p>Coordinar prioridades, personas e información para que cada proyecto avance.</p></div>
+            </article>
+          </div>
+          <div class="focus-cell reveal">
+            <article class="focus-card" data-depth>
+              <span class="card-index" aria-hidden="true">02 /</span>
+              <div class="focus-art analysis-art" aria-hidden="true">
+                <div class="analysis-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <svg class="analysis-line" viewBox="0 0 320 200"><path class="line-base" d="M25 157C60 157 65 113 99 120S147 146 172 98 218 118 245 68 279 60 295 35"/><path class="line-trace" d="M25 157C60 157 65 113 99 120S147 146 172 98 218 118 245 68 279 60 295 35"/></svg>
+              </div>
+              <div class="focus-copy"><h3>Análisis</h3><p>Dar contexto a los números y convertirlos en información útil para decidir.</p></div>
+            </article>
+          </div>
+          <div class="focus-cell reveal">
+            <article class="focus-card" data-depth>
+              <span class="card-index" aria-hidden="true">03 /</span>
+              <div class="focus-art technology-art" aria-hidden="true">
+                <div class="orbital-system"><span class="orbital-ring"></span><span class="orbital-ring"></span><span class="orbital-ring"></span><svg class="orbital-core" viewBox="0 0 80 80"><path d="M40 8v64M8 40h64M17.4 17.4l45.2 45.2m0-45.2L17.4 62.6"/></svg></div>
+              </div>
+              <div class="focus-copy"><h3>Tecnología</h3><p>Aplicar herramientas digitales para simplificar tareas y mejorar procesos.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="skills section container" id="habilidades" aria-labelledby="skills-title">
-      <div class="section-kicker reveal"><span>05 / COMPETENCIAS & HERRAMIENTAS</span><span>RECURSOS PARA HACERLO POSIBLE</span></div>
-      <div class="section-heading reveal"><h2 id="skills-title">Criterio para pensar.<br> <em>Herramientas para hacer.</em></h2></div>
-      <div class="skills-layout"><div class="skills-caption reveal"><span class="mini-asterisk" aria-hidden="true">✳</span><p>La combinación importa.</p><span>Capacidad de gestión, atención al detalle y una mirada tecnológica que se complementan.</span></div><div class="skills-groups">
-        <div class="skill-group reveal"><h3><span>01</span> Competencias clave</h3><div class="skill-pills"><span>Gestión administrativa integral</span><span>Control financiero y presupuestario</span><span>Gestión de proyectos</span><span>Organización y trazabilidad</span><span>Resolución de problemas</span><span>Trabajo en equipo</span></div></div>
-        <div class="skill-group reveal"><h3><span>02</span> Herramientas de trabajo</h3><div class="tool-grid"><div><span class="tool-icon excel-icon" aria-hidden="true">X</span><strong>Microsoft Excel<small>Avanzado</small></strong></div><div><svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H5V3h2Zm6 0v5h5M8 12h7m-7 4h7"/></svg><strong>Gestión documental<small>Documentación y facturación</small></strong></div><div><span class="tool-icon ai-icon" aria-hidden="true">✳</span><strong>Inteligencia artificial<small>Herramientas de IA aplicada</small></strong></div></div></div>
-        <div class="skill-group reveal"><h3><span>03</span> Conocimientos técnicos complementarios</h3><p class="technical-caption">Programación orientada a la automatización de tareas administrativas y al análisis de datos.</p><div class="skill-pills technical-pills"><span>Python</span><span>C# / .NET</span><span>Git / GitHub</span><span>Visual Studio Code</span></div></div>
-        <div class="language-row reveal"><span>También, en dos idiomas.</span><div><strong>Español <small>Nativo</small></strong><strong>Inglés <small>Avanzado</small></strong></div></div>
-      </div></div>
+      <div class="section-header reveal"><span class="section-number">05</span><h2 id="skills-title">Competencias y herramientas</h2></div>
+      <div class="skills-bento">
+        <article class="bento-card competency-card reveal">
+          <div class="bento-heading"><h3>Competencias clave</h3><span class="bento-symbol" aria-hidden="true">✳</span></div>
+          <ul class="competency-grid">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M9 6V3h6v3M4 12h16M10 12v3h4v-3"/></svg><span>Administración integral</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10m8 10V4m8 16v-7M2 20h20"/></svg><span>Control financiero y presupuestario</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M14 6h4v5M6 14v4h5"/></svg><span>Gestión de proyectos</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 2 2 3-4m3 2h10M3 13l2 2 3-4m3 2h10M3 20l2 2 3-4m3 2h10"/></svg><span>Organización y trazabilidad</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8 14a7 7 0 1 1 8 0l-1 2H9Z"/></svg><span>Resolución de problemas</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 4v3"/></svg><span>Trabajo en equipo</span></li>
+          </ul>
+        </article>
+        <article class="bento-card tools-card reveal">
+          <div class="bento-heading"><h3>Herramientas de trabajo</h3><span class="card-dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <ul class="tool-list">
+            <li><span class="tool-icon excel-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="10" y="5" width="18" height="22" rx="2"/><path d="M19 5v22m-9-15h18m-18 8h18"/><rect class="excel-front" x="3" y="10" width="14" height="14" rx="2"/><path class="excel-x" d="m7 14 6 6m0-6-6 6"/></svg></span><div><h4>Microsoft Excel</h4><p>Avanzado</p></div></li>
+            <li><span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H5V3h2Zm6 0v5h5M8 12h7m-7 4h7"/></svg></span><div><h4>Gestión documental</h4><p>Documentación y facturación</p></div></li>
+            <li><span class="tool-icon ai-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span><div><h4>Inteligencia artificial</h4><p>Herramientas de IA aplicada</p></div></li>
+          </ul>
+        </article>
+        <article class="bento-card technical-card reveal">
+          <div class="bento-heading"><h3>Formación técnica complementaria</h3><span class="code-symbol" aria-hidden="true">&lt;/&gt;</span></div>
+          <ul class="skill-pills"><li>Python</li><li>C# / .NET</li><li>Git / GitHub</li><li>Visual Studio Code</li></ul>
+        </article>
+        <article class="bento-card languages-card reveal">
+          <div class="bento-heading"><h3>Idiomas</h3><svg class="language-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></svg></div>
+          <ul class="languages"><li><strong>Español</strong><span>Nativo</span></li><li><strong>Inglés</strong><span>Avanzado</span></li></ul>
+        </article>
+      </div>
     </section>
 
-    <section class="contact section" id="contacto" aria-labelledby="contact-title"><div class="contact-contours" aria-hidden="true"></div><div class="container contact-inner">
-      <div class="section-kicker reveal"><span>06 / CONTACTO</span><span>EL PRÓXIMO PASO EMPIEZA CON UNA CONVERSACIÓN</span></div>
-      <div class="contact-top reveal"><h2 id="contact-title">Las buenas conexiones<br> abren <em>posibilidades.</em></h2><a href="mailto:santiagoabella.f@gmail.com" class="contact-circle magnetic" aria-label="Enviar un correo a Santiago Abella">↗</a></div>
-      <p class="contact-description reveal">Si mi perfil encaja con lo que estás buscando,<br> me gustaría conocer tu propuesta.</p>
-      <a class="contact-email reveal" href="mailto:santiagoabella.f@gmail.com">santiagoabella.f@gmail.com <span aria-hidden="true">↗</span></a>
-      <div class="contact-links reveal"><a href="https://www.linkedin.com/in/santiagoabella/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><strong>Conectemos <span aria-hidden="true">↗</span></strong></a><a href="tel:+59894388662"><span>TELÉFONO</span><strong>+598 94 388 662 <span aria-hidden="true">↗</span></strong></a><a href="assets/CV_Santiago_Abella.pdf" download><span>CURRICULUM VITAE</span><strong>Descargar CV <span aria-hidden="true">↓</span></strong></a></div>
-      <footer><a class="brand" href="#inicio" aria-label="Volver al inicio">sa<span>.</span></a><span>© <span id="year">2026</span> Santiago Abella</span><span>Desde Montevideo, Uruguay.</span><a href="#inicio" class="back-top">Volver arriba ↑</a></footer>
-    </div></section>
+    <section class="contact section" id="contacto" aria-labelledby="contact-title" data-animate>
+      <div class="contact-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="container">
+        <div class="section-header reveal"><span class="section-number">06</span><h2 id="contact-title">Conversemos.</h2></div>
+        <a class="contact-email reveal" href="mailto:santiagoabella.f@gmail.com">santiagoabella.f@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-links reveal">
+          <a href="https://www.linkedin.com/in/santiagoabella/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="tel:+59894388662">+598 94 388 662</a>
+          <a href="assets/CV_Santiago_Abella.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+        </div>
+        <footer><a class="brand" href="#inicio" aria-label="Volver al inicio">sa<span>.</span></a><span>© <span id="year">2026</span> Santiago Abella</span><a href="#inicio" class="back-top">Volver arriba ↑</a></footer>
+      </div>
+    </section>
   </main>
-  <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones" title="Pausar animaciones"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="pause-icon" d="M9 6v12M15 6v12"/><path class="play-icon" d="m9 5 10 7-10 7Z"/></svg><span>Movimiento</span></button>
+  <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones" title="Pausar animaciones"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="pause-icon" d="M9 6v12M15 6v12"/><path class="play-icon" d="m9 5 10 7-10 7Z"/></svg></button>
 </body>
 </html>

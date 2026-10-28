@@ -43,6 +43,10 @@
     if (!scrollPending) { scrollPending = true; requestAnimationFrame(updateScroll); }
   }, { passive: true });
   window.addEventListener('resize', updateScroll, { passive: true });
+  // Opening responsibilities changes the document height without scrolling.
+  document.querySelectorAll('.career-details').forEach(details => {
+    details.addEventListener('toggle', updateScroll);
+  });
   updateScroll();
 
   const menuButton = document.querySelector('.menu-toggle');
@@ -92,9 +96,20 @@
       });
     }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
     document.querySelectorAll('main section[id]').forEach(el => sectionObserver.observe(el));
+
+    // Decorative motion only runs while its section is near the viewport.
+    const ambientObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.target.classList.toggle('is-in-view', entry.isIntersecting));
+    }, { rootMargin: '100px' });
+    document.querySelectorAll('[data-animate]').forEach(el => ambientObserver.observe(el));
   } else {
     root.classList.remove('motion-enabled');
+    document.querySelectorAll('[data-animate]').forEach(el => el.classList.add('is-in-view'));
   }
+
+  document.addEventListener('visibilitychange', () => {
+    root.classList.toggle('page-hidden', document.hidden);
+  });
 
   if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     document.querySelectorAll('.magnetic').forEach(el => {
@@ -104,6 +119,33 @@
         el.style.translate = `${(event.clientX - rect.left - rect.width / 2) * .1}px ${(event.clientY - rect.top - rect.height / 2) * .14}px`;
       });
       el.addEventListener('pointerleave', () => { el.style.translate = ''; });
+    });
+
+    document.querySelectorAll('[data-depth]').forEach(card => {
+      let frame = 0;
+      let pointerX = 0, pointerY = 0;
+      card.addEventListener('pointermove', event => {
+        if (motionPaused) return;
+        pointerX = event.clientX;
+        pointerY = event.clientY;
+        if (frame) return;
+        frame = requestAnimationFrame(() => {
+          frame = 0;
+          if (motionPaused) return;
+          const rect = card.getBoundingClientRect();
+          const x = Math.max(0, Math.min(1, (pointerX - rect.left) / rect.width));
+          const y = Math.max(0, Math.min(1, (pointerY - rect.top) / rect.height));
+          card.style.setProperty('--rx', `${(y - .5) * -4}deg`);
+          card.style.setProperty('--ry', `${(x - .5) * 4}deg`);
+          card.style.setProperty('--mx', `${x * 100}%`);
+          card.style.setProperty('--my', `${y * 100}%`);
+        });
+      }, { passive: true });
+      card.addEventListener('pointerleave', () => {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        ['--rx', '--ry', '--mx', '--my'].forEach(property => card.style.removeProperty(property));
+      });
     });
   }
 
@@ -160,6 +202,7 @@
   }
 
   function render() {
+    if (!width || !height) return;
     ctx.clearRect(0, 0, width, height);
     const shadow = ctx.createRadialGradient(width * .53, height * .53, 5, width * .53, height * .53, width * .42);
     shadow.addColorStop(0, '#b2c59826');
@@ -198,11 +241,11 @@
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    render();
+    drawFlow();
   }
   function tick(now) {
     frameId = 0;
-    if (motionPaused || !inView || document.hidden) return;
+    if (motionPaused || !inView || document.hidden || !width || !height) return;
     if (now - lastFrame >= 32) {
       const delta = lastFrame ? Math.min((now - lastFrame) / 1000, .06) : .033;
       clock += delta * .24;
