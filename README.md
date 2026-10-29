@@ -36,31 +36,34 @@ El sitio refleja esa combinación: organización, atención al detalle y apertur
 
 ## Diseño y experiencia
 
-Una estética editorial y minimalista, con una paleta de **marfil, verde bosque y salvia**, tipografía amplia y una jerarquía visual clara.
+Una estética editorial, clara y premium: **marfil, verde bosque y salvia**, con títulos en **Manrope** combinados con itálicas de **Instrument Serif**, texto en **DM Sans** y detalles en **DM Mono**. Incluye un **modo oscuro** opcional; el modo claro es el principal.
 
-La experiencia incorpora:
+Pensado también desde la mirada de un recruiter: datos clave a primera vista, CV y contacto siempre a mano y lectura rápida.
 
-- **Portada interactiva:** presentación y fotografía integradas, con una composición animada en Canvas en pantallas amplias.
-- **Lectura progresiva:** información esencial a primera vista y responsabilidades profesionales desplegables.
-- **Cards e ilustraciones:** composición de competencias y herramientas en tarjetas, con gráficos abstractos animados para organización, análisis y tecnología.
-- **Movimiento sutil:** franja tipográfica continua, profundidad al mover el cursor sobre las cards y transiciones suaves al recorrer el sitio.
-- **Diseño responsive:** portada ajustada a la altura de pantalla y distribución adaptada a computadoras, tablets y celulares.
-- **Navegación por secciones:** menú móvil, indicador de sección activa y barra de progreso de lectura.
-- **Control del movimiento:** opción para pausar las animaciones y respeto por la preferencia de movimiento reducido del dispositivo.
-- **Acceso directo al CV:** descarga del currículum en PDF.
+- **Navegación flotante:** menú tipo cápsula con indicador animado de sección, botones de CV y contacto, y barra de progreso. Se oculta al bajar y reaparece al subir.
+- **Portada:** nombre con animación letra por letra, escultura de líneas en Canvas que reacciona al mouse y al scroll, etiquetas flotantes con parallax y resumen en cuatro datos (trayectoria, roles, título, idiomas).
+- **Perfil:** retrato con marco de arco que se revela al hacer scroll, sello circular giratorio y texto que se ilumina al leerlo.
+- **Experiencia:** línea de tiempo fija que sigue la lectura, tarjetas con resumen visible y responsabilidades desplegables.
+- **Enfoque:** panel verde con ilustraciones animadas, profundidad al pasar el cursor y brillo que sigue el mouse.
+- **Formación y competencias:** filas con hover suave, tarjetas con brillo que sigue el cursor e indicadores de idioma.
+- **Contacto:** botón circular magnético, copiar email en un clic y accesos directos a LinkedIn, teléfono y CV.
+- **Detalles:** scroll suave, títulos que aparecen línea por línea, textura de papel sutil, cinta de palabras que responde a la velocidad del scroll y botón "volver arriba" con progreso.
+- **Accesible y liviano:** respeta "reducir movimiento", opción para pausar animaciones, navegación por teclado y animaciones que solo corren cuando están en pantalla.
 
 ## Tecnologías
 
 | Tecnología | Aplicación |
 | :--- | :--- |
 | **HTML5** | Estructura semántica, contenido y metadatos. |
-| **CSS3** | Diseño responsive, composición visual y animaciones. |
-| **JavaScript** | Interacciones, navegación y preferencias de movimiento. |
-| **Canvas 2D** | Gráfico generativo animado de la portada. |
+| **CSS3** | Sistema visual con temas claro/oscuro, layout responsive y animaciones. |
+| **JavaScript** | Interacciones, tema y preferencias de movimiento. |
+| **Canvas 2D** | Escultura de líneas de la portada. |
+| **GSAP + ScrollTrigger + SplitText** | Animaciones ligadas al scroll (vía CDN jsDelivr). |
+| **Lenis** | Scroll suave (vía CDN jsDelivr). |
 | **Node.js** | Servidor de desarrollo local. |
-| **Google Fonts** | Tipografías Manrope y DM Sans. |
+| **Google Fonts** | Manrope, Instrument Serif, DM Sans y DM Mono. |
 
-El sitio utiliza HTML, CSS y JavaScript nativos. No requiere frameworks, instalación de paquetes ni un proceso de compilación.
+No requiere instalación de paquetes ni proceso de compilación. Si las librerías externas no cargan, el contenido se muestra completo sin animaciones.
 
 ## Estructura del repositorio
 
@@ -68,7 +71,7 @@ El sitio utiliza HTML, CSS y JavaScript nativos. No requiere frameworks, instala
 .
 ├── index.html                  # Contenido y estructura del sitio
 ├── style.css                   # Identidad visual y diseño responsive
-├── script.js                   # Animaciones e interacciones
+├── script.js                   # Animaciones, tema e interacciones
 ├── server.mjs                  # Servidor de desarrollo local
 ├── package.json                # Comandos del proyecto
 ├── README.md
@@ -102,8 +105,8 @@ El contenido y el diseño están organizados para facilitar futuras actualizacio
 | Para actualizar… | Archivo |
 | :--- | :--- |
 | Perfil, experiencia, formación y contacto | `index.html` |
-| Colores, tipografías y distribución | `style.css` |
-| Efectos visuales y comportamiento | `script.js` |
+| Colores (variables en `:root`), tipografías y distribución | `style.css` |
+| Animaciones, tema y escultura de la portada | `script.js` |
 | Currículum descargable | `assets/CV_Santiago_Abella.pdf` |
 
 Al reemplazar el PDF, conservar su nombre permite mantener los enlaces de descarga existentes.
