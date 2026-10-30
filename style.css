@@ -226,14 +226,14 @@ a:hover > .roll, button:hover > .roll { transform: translateY(-100%); }
 
 
 /* ---------- Ticker ---------- */
-.ticker { overflow: hidden; padding-block: 20px; border-block: 1px solid var(--line); background: var(--bg-alt); transition: background-color .5s; }
+.ticker { overflow: hidden; padding-block: 11px; border-block: 1px solid var(--line); background: var(--bg-alt); transition: background-color .5s; }
 .ticker-track { display: flex; width: max-content; will-change: transform; }
 html:not(.js-anim) .ticker-track { animation: ribbon 70s linear infinite; }
 @keyframes ribbon { to { transform: translateX(-50%); } }
-.ticker-group { display: flex; align-items: center; gap: 36px; padding-right: 36px; flex-shrink: 0; white-space: nowrap; }
-.ticker-group span { font-family: var(--display); font-size: clamp(18px, 1.8vw, 24px); letter-spacing: -.03em; color: var(--ink-2); }
-.ticker-group em { font-family: var(--serif); font-style: italic; font-size: clamp(21px, 2vw, 27px); color: var(--green); }
-.ticker-group i { font-style: normal; font-size: 14px; color: var(--sage); }
+.ticker-group { display: flex; align-items: center; gap: 26px; padding-right: 26px; flex-shrink: 0; white-space: nowrap; }
+.ticker-group span { font-family: var(--display); font-size: clamp(15px, 1.35vw, 18px); letter-spacing: -.03em; color: var(--ink-2); }
+.ticker-group em { font-family: var(--serif); font-style: italic; font-size: clamp(17px, 1.5vw, 20px); color: var(--green); }
+.ticker-group i { font-style: normal; font-size: 11px; color: var(--sage); }
 
 /* ==========================================================================
    01 About

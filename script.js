@@ -257,7 +257,7 @@
       if (v > .3) dir = -1; else if (v < -.3) dir = 1;
       x += ((isPaused() ? 0 : 26) + Math.abs(v) * 8) * dir * dt / 1000;
       const w = group.offsetWidth;
-      if (w) { if (x <= -w) x += w; if (x > 0) x -= w; }
+      if (w) { x %= w; if (x > 0) x -= w; }
       setX(x);
     });
   }
