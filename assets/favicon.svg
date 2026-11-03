@@ -4,23 +4,12 @@
       <stop offset="0" stop-color="#2f5f4a"/>
       <stop offset="1" stop-color="#11291f"/>
     </linearGradient>
-    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e4f4c6"/>
-      <stop offset="1" stop-color="#9fcd6c"/>
-    </linearGradient>
-    <mask id="gap" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-      <rect width="64" height="64" fill="#fff"/>
-      <path transform="translate(0 4) translate(32.5 32) scale(.86) translate(-32.5 -32)" d="M26 48.5L40 15" fill="none" stroke="#000" stroke-width="11.5" stroke-linecap="round"/>
-    </mask>
   </defs>
   <rect width="64" height="64" rx="16" fill="url(#bg)"/>
-  <rect x=".75" y=".75" width="62.5" height="62.5" rx="15.25" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="1.5"/>
-  <g fill="none" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
-    <!-- S: más arriba -->
-    <g mask="url(#gap)">
-      <path transform="translate(0 -4) translate(32.5 32) scale(.86) translate(-32.5 -32)" d="M28 21.5C26.3 18.4 23.6 15.5 19.5 15.5C14.8 15.5 12 18.6 12 22.6C12 27.2 15.8 29 20 30.8C24.6 32.8 28 34.8 28 40C28 45 24.6 48.5 19.6 48.5C15.6 48.5 12.6 46.3 11 42.8" stroke="url(#s)"/>
-    </g>
-    <!-- A: más abajo -->
-    <path transform="translate(0 4) translate(32.5 32) scale(.86) translate(-32.5 -32)" d="M26 48.5L40 15L54 48.5M31 38H49" stroke="#f4f3ee"/>
+  <g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- s: lima, arriba -->
+    <path transform="translate(-1.2 -6.5) translate(32 34) scale(1.12) translate(-32 -34)" stroke="#c8e39a" d="M26.09 27.11C24.68 24.78 22.2 23.4 18.78 23.4C14.53 23.4 11.7 25.41 11.7 28.28C11.7 31.46 14.88 32.52 18.78 33.58C22.91 34.64 26.45 35.91 26.45 39.51C26.45 42.69 23.26 44.6 18.9 44.6C15.12 44.6 12.41 43.22 10.75 40.68"/>
+    <!-- a: crema, abajo, con colita -->
+    <path transform="translate(-0.5 3) translate(32 34) scale(1.12) translate(-32 -34) translate(1.6 0)" stroke="#f4f3ee" d="M32 27.6C33.5 25.2 36.1 24 39.6 24C44.8 24 48 26.6 48 31.6V41C48 43 49.2 44 51.5 44M48 33.4H40.2C34.6 33.4 31 35.4 31 39C31 42.2 33.6 44 37.4 44C42.6 44 48 41.4 48 36.4"/>
   </g>
 </svg>
